@@ -17,5 +17,8 @@ public class User {
 
     @Column(nullable = false)
     private String userId;
-    
+
+    @Column(nullable = false)
+    private String nickname;
+
 }
