@@ -1,7 +1,5 @@
 package com.example.dashboard.model;
 
-import lombok.Getter;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -14,5 +12,11 @@ public class User {
     @Id
     @Column(name = "id", nullable = false)
     private Long id;
+
+    @Column(nullable = false)
+    private String userId;
+
+    @Column(nullable = false)
+    private String nickname;
 
 }
